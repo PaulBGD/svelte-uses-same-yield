@@ -1,0 +1,23 @@
+<div>
+    {{#if doIt}}
+        <Component>Hello</Component>
+    {{else}}
+        <Component>Goodbye</Component>
+    {{/if}}
+</div>
+
+<script>
+    import Component from './component.html';
+
+    export default {
+        data() {
+            return {
+                doIt: false
+            }
+        },
+        components: {
+            Component,
+        }
+    };
+</script>
+
